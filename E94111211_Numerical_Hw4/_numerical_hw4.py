@@ -1,7 +1,7 @@
 import math
 import numpy as np
 from scipy.integrate import quad
-
+#第一題
 def f(x):
     return math.exp(x) * math.sin(4 * x)
 def composite_trapezoidal(f, a, b, n):
@@ -36,7 +36,7 @@ print(f"a.Composite Trapezoidal Rule approximation: {approximation_trapezoidal}"
 print(f"b.Composite Simpson's Method approximation: {approximation_simpson}")
 print(f"c.Composite Midpoint Rule approximation: {approximation_midpoint}")
 
-
+#第二題
 def f(x):
     return x**2 * np.log(x)
 
@@ -56,7 +56,7 @@ print(f"n = 4 answer:{result_4}")
 
 print(f"exact value:{result}")
 
-
+#第三題
 def f(x, y):
     return 2 * y * np.sin(x) + np.cos(x)**2
 
@@ -127,7 +127,7 @@ print("3")
 print(f"a.Simpson's Rule : {res_simpsons}")
 print(f"b.Gauss–Legendre Quadrature : {res_gauss}")
 print(f"c.Exact Integral : {res_exact}")
-
+#第四題
 def composite_simpson(f, a, b, n):
     h = (b - a) / n
     result = f(a) + f(b)
